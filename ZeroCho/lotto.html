@@ -6,8 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="result">추첨 결과는</div>
-    <div id="bonus">보너스: </div>
+    <div id="result">추첨 결과는
+        <p id="pick-list"></p>
+    </div>
+    <div id="bonus">보너스 번호는 
+        <p id="bonus-number"></p>
+    </div>
+    <button id="pick-button" type="button" onclick="pickBalls()">추첨 하기</button>
     
     <script src="./lotto.js"></script>
 </body>
