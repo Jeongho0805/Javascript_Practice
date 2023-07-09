@@ -19,10 +19,12 @@ class User {
     }
 
     setNumber() {
+        console.log("setNumber 시작");
+
         Console.readLine("숫자를 입력해주세요 : ", (input) => {
-        if (this.checkNumber(input)) {
-            this.number = input.split("").map((v) => +v);
-        }
+            if (this.checkNumber(input)) {
+                this.number = input.split("").map((v) => +v);
+            }
         });
     }
 

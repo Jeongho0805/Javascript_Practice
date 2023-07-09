@@ -7,12 +7,13 @@ class Computer {
 
     setNumber() {
         const numbers = [];
-        while (number.length < 3) {
+        while (numbers.length < 3) {
             const number = Random.pickNumberInRange(1, 9);
-            if (!numbers.include(number)) {
+            if (!numbers.includes(number)) {
                 numbers.push(number);
             }
         }
+
         this.number = numbers;
     }
 
